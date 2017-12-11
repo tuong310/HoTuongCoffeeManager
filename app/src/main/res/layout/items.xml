@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/items_txtNameTable"
+            android:layout_width="67dp"
+            android:layout_height="74dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:text="Bàn 1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/items_txtInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="THÔNG TIN BÀN" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/items_btnPeople"
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/z1" />
+
+                <Button
+                    android:id="@+id/items_btnSeatReservation"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="đặt trước"
+                    android:textColorHighlight="@android:color/background_light" />
+
+                <Button
+                    android:id="@+id/items_btnEmptyTable"
+                    android:layout_width="58dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bàn trống" />
+
+                <ImageButton
+                    android:id="@+id/items_btnLabourer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/z2" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
